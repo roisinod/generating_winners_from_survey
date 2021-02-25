@@ -1,12 +1,7 @@
 import random
 import pandas as pd
-
-excel_file = pd.read_excel('#########.xlsx')
-#print(excel_file.columns)
-#excel_file.rename(columns={'Unnamed: 21': 'Name'}, inplace=True)
-#print(excel_file.iloc[:, -1])
-#print(excel_file.columns)
-#ran = random.choice(excel_file.Name)
+#export excel file as csv. Then close excel window before executing program
+excel_file = pd.read_csv('##############.csv')
 names = excel_file.Name
 names = names.dropna()
 print(names)
