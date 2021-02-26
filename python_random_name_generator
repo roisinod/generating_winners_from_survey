@@ -1,8 +1,10 @@
 import random
 import pandas as pd
+def generator():
 #export excel file as csv. Then close excel window before executing program
-excel_file = pd.read_csv('##############.csv')
-names = excel_file.Name
-names = names.dropna()
-print(names)
-print(random.choices(names, k=3))
+    file = pd.read_csv('######.csv')
+    names = file.Name
+    names = names.dropna()
+    print(names)
+    print(random.choices(names, k=3))
+generator()
